@@ -11,6 +11,11 @@
   </head>
 
   <style type="text/css">
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
     .books{
       display: flex;
       flex-wrap: wrap;
@@ -20,24 +25,33 @@
 
     .thumbnail {
       display: inline-block;
-      width: 145px;
+      width: 225px;
       height: 225px;
       background-color: #ccc;
       margin: 0 5px;
       cursor: pointer;
       overflow: hidden;
+      border-radius: 150px;
     }
 
     .thumbnail img{
       width: 100%;
-      height: 88%;
+      height: 135%;
+      position: relative;
+      left: 0px;
+      bottom: 75px;
     }
 
     .thumbnail p{
       text-align: center;
       margin-top: 0px;
-      font-family: 'Roboto', sans-serif;
-      font-size: 15px;
+      font-size: 27px;
+      color: white;
+      z-index: 1;
+      position: fixed;
+      top: 350px;
+      left: 843px;
+      text-shadow: 0px 2px 3px black;
     }
 
     .fullscreen {
@@ -57,7 +71,7 @@
       font-size: 20px;
       font-weight: bold;
       height: 100px;
-      width: 50%;
+      width: 60%;
       border-radius: 0 0 45px 0;
     }
 
@@ -67,10 +81,16 @@
       margin-top: 15px;
     }
 
+    .header h1 {
+      display: inline;
+      float: right;
+      margin-right: 200px;
+    }
+
     .bg{
       position: fixed; 
-      top: -25%; 
-      width: 1vw; 
+      top: -50%; 
+      width: 100%; 
       height: 113%;
       z-index:-1;
     }
@@ -85,18 +105,19 @@
       min-width: 50%;
       min-height: 75%;
       border-radius: 0 0 0 350px;
+      width: 100%;
     }
   </style>
   <body> 
 
     <div class="header">
       <img src="images\Roadchef_Motorway_Services_Logo_2022.jpg" alt="logo">
-      Test
+      <h1>Roadchef Interactive Document Viewer</h1>
     </div>
     
     
     <div class="bg">
-      <img src="images\92b665cd-952a-4b1b-8902-3ad0804cf044.jfif" alt="test">
+      <img src="images\Roadchef_EB_2021_D2-161_v2_300dpi_RGB.jpg" alt="test">
     </div>
 
 
